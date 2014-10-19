@@ -6247,6 +6247,7 @@ html, body {
 
 body {
 	padding-top: 70px;
+	background-image: url('/images/crossword.png');
 }
 
 #wrap {
