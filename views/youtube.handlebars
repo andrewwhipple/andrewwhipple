@@ -9,6 +9,7 @@
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/bootswatch.css" rel="stylesheet">
 	<!--<link href="/css/introHCI.css" rel="stylesheet">-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<style>
 	body { padding-top: 70px; }
 	</style>
@@ -50,7 +51,7 @@
 						<!--<li><a href="/websites">Websites</a></li>-->
 						<li class="active"><a href="/youtube">Youtube</a></li>
 						<li><a href="/contact">Contact</a></li>
-						<li><a href="/resume">Resume</a></li>
+						<!--<li><a href="/resume">Resume</a></li>-->
 						<!--<li>
 							<a href="!"><span class="glyphicon glyphicon-music"></span>
 							</a>
@@ -80,19 +81,20 @@
 			
 		</nav>
 		
-		<div class="container"><h1>Hi there, world!</h1></div>
+		<div class="container"><h1><a href="https://youtube.com/theandrewwhipple">Main Channel (TheAndrewWhipple)</a></h1>
+			<p><em>Original comedy songs, covers, and vlogs, and really whatever I feel like making.</em></p></div>
 
-		<div class="container">
+		<!--<div class="container">
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
+			  --><!-- Indicators -->
+			  <!--<ol class="carousel-indicators">
 			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
 			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
 			  </ol>
 
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner">
+			  --><!-- Wrapper for slides -->
+			  <!--<div class="carousel-inner">
 			    <div class="item active">
 			      <img src="http://www.xerraireart.com/images8/babykitty.jpg">
 			      <div class="carousel-caption">
@@ -114,8 +116,8 @@
 			    
 			  </div>
 
-			  <!-- Controls -->
-			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			  --><!-- Controls -->
+			  <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 			    <span class="glyphicon glyphicon-chevron-left"></span>
 			  </a>
 			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
@@ -123,7 +125,63 @@
 			  </a>
 			</div>
 			
+		</div> -->
+		<div class="container">
+		<div class="row">
+		<div class="col-md-3">
+			<h4>Most recent video</h4>
+		<div id="static_video"></div>
+		    <script type="text/javascript">
+		        function showLatestVid(response) {
+		            if(response.data && response.data.items) {
+		                var items = response.data.items;
+		                if(items.length>0) {
+		                    var item = items[0];
+		                    var videoid = "http://www.youtube.com/embed/"+item.id;
+		                    console.log("Latest ID: '"+videoid+"'");
+		                    var video = "<iframe width='300' height='225' src='"+videoid+"' frameborder='0' allowfullscreen></iframe>"; 
+		                    jQuery('#static_video').html(video);
+		                }
+		            }
+		        }
+		    </script>
+		    <script type="text/javascript" src="https://gdata.youtube.com/feeds/api/users/theandrewwhipple/uploads?max-results=1&orderby=published&v=2&alt=jsonc&callback=
+		showLatestVid"></script>
+		
+	</div>
+	
+	<div class="col-md-1"></div>
+	<div class="col-md-3">
+		<h4>Songs</h4>
+		<iframe width="300" height="225" src="//www.youtube.com/embed/videoseries?list=PLJ1cuJHARbAB0dS5l4t8UCXFqZFy1R9cG" frameborder="0" allowfullscreen></iframe>
+	</div>
+	
+	<div class="col-md-1"></div>
+	<div class="col-md-3">
+		<h4>Vlogs</h4>
+		<iframe width="300" height="225" src="//www.youtube.com/embed/videoseries?list=PLJ1cuJHARbABdk1AqIpxnNqkMWiHBIZDW" frameborder="0" allowfullscreen></iframe>
+	</div>
+	
+	</div></div>
+		
+		<div class="container"><h1><a href="https://www.youtube.com/user/TheADubClub/featured">The A-Dub Club</a></h1>
+			<p><em>A Youtube talk show discussing pop culture, science, technology, philosophy, and whatever other geeky things we feel like. (No longer updating)</em></p>
+			<div class="row">
+			<div class="col-md-3">
+				<h4>Season 1</h4>
+				<iframe width="300" height="225" src="//www.youtube.com/embed/videoseries?list=PLFD73A804F359CBF9" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-3">
+			<h4>Season 2</h4>
+			<iframe width="300" height="225" src="//www.youtube.com/embed/videoseries?list=PLnj-KEowZ2UqW-8aPAZzJR6GAZgwpgjw_" frameborder="0" allowfullscreen></iframe>
+			</div>
+			
+			
+			</div>
+			
 		</div>
+		
 		<div id="push"></div>
 	</div> <!-- wrap div-->
 	
