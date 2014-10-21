@@ -17,6 +17,8 @@ var websites = require('./routes/websites');
 var youtube = require('./routes/youtube');
 var contact = require('./routes/contact');
 var resume = require('./routes/resume');
+var technical = require('./routes/technical');
+var acting = require('./routes/acting');
 
 // Example route
 // var user = require('./routes/user');
@@ -59,6 +61,8 @@ app.get('/websites', websites.view);
 app.get('/youtube', youtube.view);
 app.get('/contact', contact.view);
 app.get('/resume', resume.view);
+app.get('/acting', acting.view);
+app.get('/technical', technical.view);
 
 // Example route
 // app.get('/users', user.list);
