@@ -19,6 +19,7 @@ var contact = require('./routes/contact');
 var resume = require('./routes/resume');
 var technical = require('./routes/technical');
 var acting = require('./routes/acting');
+var thecat = require('./routes/thecat');
 
 // Example route
 // var user = require('./routes/user');
@@ -63,6 +64,7 @@ app.get('/contact', contact.view);
 app.get('/resume', resume.view);
 app.get('/acting', acting.view);
 app.get('/technical', technical.view);
+app.get('/thecat', thecat.view);
 
 // Example route
 // app.get('/users', user.list);
