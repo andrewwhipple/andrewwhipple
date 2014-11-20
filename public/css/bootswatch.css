@@ -6250,6 +6250,12 @@ body {
 	background-image: url('/images/crossword.png');
 }
 
+@font-face {
+	font-family: 'Comic Sans MS';
+	font-style: normal;
+	font-weight: 400;
+	src: url(/fonts/ComicSansMs.ttf) format('ttf');
+}
 #wrap {
 	min-height: 100%;
 	height: auto !important;
