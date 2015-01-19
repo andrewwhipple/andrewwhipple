@@ -8,7 +8,7 @@
     });
   };
 
-  images = ["/css/Spiral/1.png", "/css/Spiral/2.png", "/css/Spiral/3.png", "/css/Spiral/4.png", "/css/Spiral/5.png", "/css/Spiral/6.png", "/css/Spiral/7.png", "/css/Spiral/8.png", "/css/Spiral/9.png", "/css/Spiral/10.png", "/css/Spiral/11.png", "/css/Spiral/12.png", "/css/Spiral/13.png", "/css/Spiral/14.png", "/css/Spiral/15.png", "/css/Spiral/16.png", "/css/Spiral/17.png", "/css/Spiral/18.png", "/css/Spiral/19.png", "/css/Spiral/20.png", "/css/Spiral/21.png", "/css/Spiral/22.png", "/css/Spiral/23.png", "/css/Spiral/24.png", "/css/Spiral/25.png", "/css/Spiral/26.png", "/css/Spiral/27.png", "/css/Spiral/28.png", "/css/Spiral/29.png"];
+  images = ["/css/Spiral/1.png", "/css/Spiral/2.png", "/css/Spiral/3.png", "/css/Spiral/4.png", "/css/Spiral/5.png", "/css/Spiral/6.png", "/css/Spiral/7.png", "/css/Spiral/8.png", "/css/Spiral/9.png", "/css/Spiral/10.png", "/css/Spiral/11.png", "/css/Spiral/12.png", "/css/Spiral/13.png", "/css/Spiral/14.png", "/css/Spiral/15.png", "/css/Spiral/16.png", "/css/Spiral/17.png", "/css/Spiral/18.png", "/css/Spiral/19.png", "/css/Spiral/20.png", "/css/Spiral/21.png", "/css/Spiral/22.png", "/css/Spiral/23.png", "/css/Spiral/24.png", "/css/Spiral/25.png", "/css/Spiral/26.png", "/css/Spiral/27.png", "/css/Spiral/28.png", "/css/Spiral/29.png", "/css/Spiral/sorry.jpg"];
 
   preload(images);
 

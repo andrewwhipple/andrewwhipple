@@ -33,7 +33,8 @@ images = [
 	"/css/Spiral/26.png",
 	"/css/Spiral/27.png",
 	"/css/Spiral/28.png",
-	"/css/Spiral/29.png"
+	"/css/Spiral/29.png",
+	"/css/Spiral/sorry.jpg"
 ]
 
 preload(images)
