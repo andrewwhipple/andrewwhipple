@@ -17,7 +17,7 @@
   $(".spacer").css("height", "" + (height + 150));
 
   if (($(".spacer").css("color")) === "rgb(255, 0, 0)") {
-    $("body").css("background-image", "url(./css/Spiral.sorry.jpg)");
+    $("body").css("background-image", "url(./css/Spiral/sorry.jpg)");
   }
 
   $(window).scroll(function() {

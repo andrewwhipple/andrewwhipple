@@ -43,7 +43,7 @@ height = $(window).height()
 $(".spacer").css "height", "#{height + 150}"
 
 if ($(".spacer").css "color") is "rgb(255, 0, 0)"
-	$("body").css "background-image", "url(./css/Spiral.sorry.jpg)"
+	$("body").css "background-image", "url(./css/Spiral/sorry.jpg)"
 
 $(window).scroll -> 
 	unless ($(".spacer").css "color") is "rgb(255, 0, 0)"
