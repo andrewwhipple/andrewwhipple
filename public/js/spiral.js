@@ -16,9 +16,13 @@
 
   $(".spacer").css("height", "" + (height + 150));
 
+  if (($(".spacer").css("color")) === "rgb(255, 0, 0)") {
+    $("body").css("background-image", "url(./css/Spiral.sorry.jpg)");
+  }
+
   $(window).scroll(function() {
     var top;
-    if (($(".spacer").css("color")) === "rgb(0, 0, 255)") {
+    if (($(".spacer").css("color")) !== "rgb(255, 0, 0)") {
       top = $(window).scrollTop();
       console.log("Scroll: " + top);
       if (top < 5) {
@@ -80,8 +84,6 @@
       } else if (145 <= top) {
         return $("body").css("background-image", "url(./css/Spiral/29.png)");
       }
-    } else {
-      return $(".spacer").html("<h1>YO " + ($('.spacer').css("color")) + "</h1>");
     }
   });
 

@@ -42,8 +42,11 @@ height = $(window).height()
 
 $(".spacer").css "height", "#{height + 150}"
 
+if ($(".spacer").css "color") is "rgb(255, 0, 0)"
+	$("body").css "background-image", "url(./css/Spiral.sorry.jpg)"
+
 $(window).scroll -> 
-	if ($(".spacer").css "color") is "rgb(0, 0, 255)"
+	unless ($(".spacer").css "color") is "rgb(255, 0, 0)"
 		top = $(window).scrollTop()
 		console.log "Scroll: #{top}"
 	
@@ -134,5 +137,3 @@ $(window).scroll ->
 		else if 145 <= top
 			#$("body").css "background-size", "98%"
 			$("body").css "background-image", "url(./css/Spiral/29.png)"
-	else 
-		$(".spacer").html "<h1>YO #{$('.spacer').css "color"}</h1>"
