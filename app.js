@@ -22,6 +22,7 @@ var acting = require('./routes/acting');
 var thecat = require('./routes/thecat');
 var spiral = require('./routes/spiral');
 var font = require('./routes/font');
+var portfolio = require('./routes/portfolio');
 // Example route
 // var user = require('./routes/user');
 
@@ -76,6 +77,7 @@ app.get('/technical', technical.view);
 app.get('/thecat', thecat.view);
 app.get('/spiral', spiral.view);
 app.get('/font', font.view);
+app.get('/portfolio', portfolio.view);
 // Example route
 // app.get('/users', user.list);
 
