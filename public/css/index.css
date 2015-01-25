@@ -1,23 +1,59 @@
-@-viewport {
-	height: 100px;
-}
-
-@font-face {
-	font-family: "Poster Cut";
-	src: url('../fonts/PosterCutRegular.otf');
-}
-
-h1 {
-	font-family: "Poster Cut";
-}
-
 body {
 	background-image: url('../images/background.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-.logoFrame {
+#logo, #projectLink, #contactLink, #logoBackground {
+	height: 100%;
+	width: 100%;
+	transition: all 2s;
+	transition-timing-function: ease-in-out;
+}
+
+#logo {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	
+}
+
+#logoBackground {
+	transition: opacity 1s float 2s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+	opacity: 0;
+	margin-top: 5%;
+}
+
+#contactLink {
+	float: right;
+	vertical-align: middle;
+}
+
+#contactPage {
+	height: 0%;
+	width: 0%;
+	opacity: 1;
+	transition: all 2s;
+}
+
+.projectPage {
+	height: 50%;
+	width: 50%;
+	opacity: 0;
+	transition: all 2s;
+
+}
+
+.projectFrame {
 	padding-top: 5%;
 }
 
@@ -30,32 +66,19 @@ body {
 	
 }
 
-#contactPage {
-	height: 0%;
-	width: 0%;
-	opacity: 1;
-	transition: all 2s;
+.bottomButtonFrame {
+	margin: 10%;
 }
 
-#logo, #projectLink, #contactLink {
-	height: 100%;
-	width: 100%;
-	transition: all 2s;
-	transition-timing-function: ease-in-out;
+.logoFrame {
+	position: relative;
+	padding-top: 5%;
+	
 }
 
-#contactLink {
-	float: right;
-	vertical-align: middle;
+#prize {
+	transition: all 0s;
+	height: 50%;
+	width: 50%;
 }
 
-
-
-
-.projectPage {
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: all 2s;
-
-}
