@@ -31,7 +31,6 @@
 
   shrinkLogoLeft = function() {
     $("#logo").css("margin-left", "0%");
-    $("#logo").css("float", "left");
     $("#logo").css("height", "60%");
     $("#logo").css("width", "60%");
     $("#logoBackground").css("float", "left");

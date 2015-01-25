@@ -8,6 +8,7 @@ body {
 	height: 100%;
 	width: 100%;
 	transition: all 2s;
+	-webkit-transition-duration: all 2s;
 	transition-timing-function: ease-in-out;
 }
 
@@ -22,6 +23,7 @@ body {
 }
 
 #logoBackground {
+	-webkit-transition-duration: opacity 1s float 2s;
 	transition: opacity 1s float 2s;
 	position: absolute;
 	top: 0;
@@ -42,6 +44,7 @@ body {
 	height: 0%;
 	width: 0%;
 	opacity: 1;
+	-webkit-transition-duration: all 2s;
 	transition: all 2s;
 }
 
@@ -49,6 +52,7 @@ body {
 	height: 50%;
 	width: 50%;
 	opacity: 0;
+	-webkit-transition-duration: all 2s;
 	transition: all 2s;
 
 }
@@ -77,6 +81,7 @@ body {
 }
 
 #prize {
+	-webkit-transition-duration: all 0s;
 	transition: all 0s;
 	height: 50%;
 	width: 50%;

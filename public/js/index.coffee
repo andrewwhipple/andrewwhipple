@@ -44,7 +44,7 @@ returnLogo = () ->
 
 shrinkLogoLeft = () ->
 	$("#logo").css "margin-left", "0%"
-	$("#logo").css "float", "left"
+	#$("#logo").css "float", "left"
 	$("#logo").css "height", "60%"
 	$("#logo").css "width", "60%"
 	
@@ -58,7 +58,7 @@ shrinkLogoRight = () ->
 	$("#logo").css "margin-left", "40%"
 	$("#logo").css "height", "60%"
 	$("#logo").css "width", "60%"
-	#$("#logoBackground").css "transition", "all 2s"
+
 	$("#logoBackground").css "margin-left", "35%"
 	$("#logoBackground").css "height", "93%"
 	$("#logoBackground").css "width", "65%"
@@ -198,7 +198,8 @@ $("#project4").hover(
 	-> 
 		if projectPage
 			$(this).attr "src", "./images/project4hover.png"
-			$("#theCatLink").attr "href", "http://andrewwhipple.com/thecat",
+			$("#theCatLink").attr "href", "http://andrewwhipple.com/thecat"
+
 	-> 
 		$(this).attr "src", "./images/project4.png"
 		$("#theCatLink").attr "href", "#",
