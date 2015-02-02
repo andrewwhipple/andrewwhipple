@@ -23,6 +23,8 @@ var thecat = require('./routes/thecat');
 var spiral = require('./routes/spiral');
 var font = require('./routes/font');
 var portfolio = require('./routes/portfolio');
+var podcasts = require('./routes/podcasts');
+var redirect = require('./routes/redirect')
 // Example route
 // var user = require('./routes/user');
 
@@ -76,8 +78,14 @@ app.get('/acting', acting.view);
 app.get('/technical', technical.view);
 app.get('/thecat', thecat.view);
 app.get('/spiral', spiral.view);
-app.get('/font', font.view);
+//app.get('/font', font.view);
 app.get('/portfolio', portfolio.view);
+//app.get('/podcasts', podcasts.view);
+//app.get('/podjack', podcasts.podjack);
+//app.get('/adub', podcasts.adub);
+//app.get('/profundity', podcasts.profundity);
+app.get('/font', redirect.fontWireframe);
+app.get('/hover', redirect.hover);
 // Example route
 // app.get('/users', user.list);
 

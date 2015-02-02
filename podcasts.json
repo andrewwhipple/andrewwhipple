@@ -1,0 +1,31 @@
+[
+	{
+		"podcast": "The A-Dub Club",
+		"episodeTitle": "Meow Mix",
+		"date": "January 28, 2015",
+		"description": "An episode all about kitty kats.",
+		"image": "lordy"
+	},
+	
+	{
+		"podcast": "The A-Dub Club",
+		"episodeTitle": "Extra Special",
+		"date": "January 14, 2015",
+		"description": "An meowcifer mc swaggle.",
+		"image": "lordy"
+	},
+	{
+		"podcast": "proFUNdity!",
+		"episodeTitle": "Merp Mix",
+		"date": "January 28, 2015",
+		"description": "An episode all about kitty kats.",
+		"image": "lordy"
+	},
+	{
+		"podcast": "Podjack Horsecast",
+		"episodeTitle": "Meh Mix",
+		"date": "January 28, 2015",
+		"description": "An episode all about kitty kats.",
+		"image": "lordy"
+	}
+]
