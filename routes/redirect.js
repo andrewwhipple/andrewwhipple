@@ -33,3 +33,8 @@ exports.fontWireframe = function(req, res){
 	
 
 };
+
+exports.profundity = function(req, res) {
+
+	res.redirect('https://itunes.apple.com/us/podcast/profun!dity-podcast/id964000881?mt=2');
+};

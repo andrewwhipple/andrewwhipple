@@ -83,7 +83,8 @@ app.get('/portfolio', portfolio.view);
 //app.get('/podcasts', podcasts.view);
 //app.get('/podjack', podcasts.podjack);
 //app.get('/adub', podcasts.adub);
-app.get('/profundity', podcasts.profundity);
+app.get('/podcast', podcasts.profundity);
+app.get('/profundity', redirect.profundity);
 app.get('/font', redirect.fontWireframe);
 app.get('/hover', redirect.hover);
 // Example route
