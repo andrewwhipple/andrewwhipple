@@ -6284,3 +6284,13 @@ body {
 #copyright {
 	padding-left: 10px;
 }
+
+.podImgFrame {
+	padding: 10px;
+	
+}
+
+.podImg {
+	max-height: 100%;
+	max-width: 100%;
+}

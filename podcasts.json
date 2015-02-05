@@ -16,10 +16,11 @@
 	},
 	{
 		"podcast": "proFUNdity!",
-		"episodeTitle": "Merp Mix",
-		"date": "January 28, 2015",
-		"description": "An episode all about kitty kats.",
-		"image": "lordy"
+		"episodeTitle": "Episode #1: A Cold Night In The End Of January",
+		"date": "February 3, 2015",
+		"description": "Tonight is a cold night in the end of January, and I decide to start a podcast.<br>Buy a domain with Hover! <a href='/hover'>andrewwhipple.com/hover</a><br><a href='/podcast'>andrewwhipple.com/podcast</a><br>Twitter: <a href='http://twitter.com/andrewthewhip'>@AndrewTheWhip</a>",
+		"image": "http://i.imgur.com/w4McLgX.jpg",
+		"audio": "http://shoutengine.com/proFUNdity/proFUNdity-0001-a-cold-night-in-the-end-of-january-6785.mp3"
 	},
 	{
 		"podcast": "Podjack Horsecast",

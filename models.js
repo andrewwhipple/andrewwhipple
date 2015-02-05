@@ -16,8 +16,9 @@ var PodcastSchema = new Mongoose.Schema({
 	"episodeTitle": String,
 	"date": Date,
 	"image": String,
-	"description": String
-})
+	"description": String,
+	"audio": String
+});
 
 exports.Project = Mongoose.model('Project', ProjectSchema);
 exports.Podcast = Mongoose.model('Podcast', PodcastSchema);

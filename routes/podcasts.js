@@ -45,8 +45,11 @@ exports.profundity = function(req, res) {
 	models.Podcast
 		.find({"podcast": "proFUNdity!"})
 		.sort("date")
-	.exec(renderPodcasts);
+	.exec(renderStatic);
 	
+	function renderStatic(err, episodes) {
+		res.render('profundity');
+	}
 	function renderPodcasts(err, episodes) {
 		res.render('podEps', { 'episodes': episodes, 'podcast': 'proFUNdity!' });
 	}

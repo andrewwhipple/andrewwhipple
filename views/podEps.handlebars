@@ -81,15 +81,18 @@
 
 		
 		<div class="container">
-			<ul>
 			{{#each episodes}}
-				<li>
+				
+				<img src="{{image}}" height="50" width="50">
 				<h3>{{episodeTitle}}</h3>
 				<p><em>{{date}}</em></p>
-				<p>{{description}}</p>
-				</li>
+				<p>{{{description}}}</p>
+				<audio controls>
+					<source src="{{audio}}" type="audio/mpeg">
+				</audio>
+				
 			{{/each}}
-			</ul>
+		
 		
 			<div id="push"></div>
 		</div>
