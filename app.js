@@ -24,7 +24,8 @@ var spiral = require('./routes/spiral');
 var font = require('./routes/font');
 var portfolio = require('./routes/portfolio');
 var podcasts = require('./routes/podcasts');
-var redirect = require('./routes/redirect')
+var redirect = require('./routes/redirect');
+var agentx = require('./routes/agentx');
 // Example route
 // var user = require('./routes/user');
 
@@ -87,6 +88,7 @@ app.get('/podcast', podcasts.profundity);
 app.get('/profundity', redirect.profundity);
 app.get('/font', redirect.fontWireframe);
 app.get('/hover', redirect.hover);
+app.get('/agentx', agentx.view);
 // Example route
 // app.get('/users', user.list);
 
